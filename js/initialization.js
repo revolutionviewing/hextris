@@ -5,26 +5,26 @@ function initialize(a) {
 	window.rush = 1;
 	window.lastTime = Date.now();
 	window.iframHasLoaded = false;
-	window.colors = ["#e74c3c", "#f1c40f", "#3498db", "#2ecc71"];
+	window.colors = ["#FF5C5F", "#f1c40f", "#654288", "#00C496"];
 	window.hexColorsToTintedColors = {
-		"#e74c3c": "rgb(241,163,155)",
+		"#FF5C5F": "rgb(255,92,95)",
 		"#f1c40f": "rgb(246,223,133)",
-		"#3498db": "rgb(151,201,235)",
-		"#2ecc71": "rgb(150,227,183)"
+		"#654288": "rgb(101, 66, 136)",
+		"#00C496": "rgb(0,196,150)"
 	};
 
 	window.rgbToHex = {
-		"rgb(231,76,60)": "#e74c3c",
+		"rgb(255,92,95)": "#FF5C5F",
 		"rgb(241,196,15)": "#f1c40f",
-		"rgb(52,152,219)": "#3498db",
-		"rgb(46,204,113)": "#2ecc71"
+		"rgb(52,152,219)": "#654288",
+		"rgb(0,196,150)": "#00C496"
 	};
 
 	window.rgbColorsToTintedColors = {
-		"rgb(231,76,60)": "rgb(241,163,155)",
+		"rgb(231,76,60)": "rgb(255,92,95)",
 		"rgb(241,196,15)": "rgb(246,223,133)",
-		"rgb(52,152,219)": "rgb(151,201,235)",
-		"rgb(46,204,113)": "rgb(150,227,183)"
+		"rgb(52,152,219)": "rgb(101,66,136)",
+		"rgb(0,196,150)": "rgb(0,196,150)"
 	};
 
 	window.hexagonBackgroundColor = 'rgb(236, 240, 241)';
@@ -48,7 +48,7 @@ function initialize(a) {
 	})();
 	$('#clickToExit').bind('click', toggleDevTools);
 	window.settings;
-	if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('.rrssb-email').remove();
 		settings = {
 			os: "other",
